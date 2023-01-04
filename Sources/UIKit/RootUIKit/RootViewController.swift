@@ -54,6 +54,7 @@ public final class RootViewController: UIViewController
         super.viewDidLoad()
 
         /// Workaround for `removeDuplicates`.
+        /// StateのうちisOnboardingComplete と userSession.authStatus に変化があった時のみストリームを流す　という動作をするためのワークアラウンド。
         struct Pair<X, Y>: Equatable where X: Equatable, Y: Equatable
         {
             var x: X
@@ -118,6 +119,9 @@ public final class RootViewController: UIViewController
     {
         switch authStatus {
         case .loggedOut:
+            // SwiftUIのViewをUIKit内で使いたい時に用いるUIHostingController。
+            // https://developer.apple.com/documentation/swiftui/uihostingcontroller
+            // https://qiita.com/owen/items/73473cd2206afda3c5d4
             let vc = UIHostingController(
                 rootView: LoginView(onAction: { [store] in
                     store.send(Action.loggedOut($0))

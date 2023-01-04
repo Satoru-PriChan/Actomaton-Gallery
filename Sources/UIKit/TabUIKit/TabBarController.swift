@@ -30,6 +30,7 @@ public final class TabBarController<TabID>: UITabBarController
 
         // Main presentation.
         // FIXME: Improve diffing.
+        // store の stateを購読し、TabBarControllerのchildViewControllersを設定する。
         self.store.$state
             .map { $0.tabs }
             .withNonDuplicatePrevious(initial: [])

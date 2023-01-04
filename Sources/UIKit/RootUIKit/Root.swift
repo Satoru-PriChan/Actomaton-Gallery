@@ -77,6 +77,7 @@ public struct Environment: Sendable
 
 public func reducer() -> Reducer<Action, State, Environment>
 {
+    /// combine によりreducer同士を合体 複数のreducerの動作両方を行えるreducerが生成される。
     .combine(
         TabUIKit.reducer()
             .contramap(action: /Action.tab)

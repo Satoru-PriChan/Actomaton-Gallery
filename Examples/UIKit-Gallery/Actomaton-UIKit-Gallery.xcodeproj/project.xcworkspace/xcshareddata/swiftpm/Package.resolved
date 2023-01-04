@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/inamiy/Actomaton",
         "state": {
           "branch": "main",
-          "revision": "18725b4cbb2d9ce8ed670128d95ea3cb4b44426f",
+          "revision": "47a3b125a847a1b92cc1a37914a3e61d171cbea2",
           "version": null
         }
       },
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/pointfreeco/swift-case-paths",
         "state": {
           "branch": null,
-          "revision": "a09839348486db8866f85a727b8550be1d671c50",
-          "version": "0.9.1"
+          "revision": "bb436421f57269fbcfe7360735985321585a86e5",
+          "version": "0.10.1"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/pointfreeco/swift-custom-dump",
         "state": {
           "branch": null,
-          "revision": "21ec1d717c07cea5a026979cb0471dd95c7087e7",
-          "version": "0.5.0"
+          "revision": "ead7d30cc224c3642c150b546f4f1080d1c411a8",
+          "version": "0.6.1"
         }
       },
       {
@@ -69,8 +69,8 @@
         "repositoryURL": "https://github.com/pointfreeco/xctest-dynamic-overlay",
         "state": {
           "branch": null,
-          "revision": "ef8e14e7ce1c0c304c644c6ba365d06c468ded6b",
-          "version": "0.3.3"
+          "revision": "df16fe6ffe4d6e2e06761aa67716b808b2c9109e",
+          "version": "0.7.0"
         }
       }
     ]
