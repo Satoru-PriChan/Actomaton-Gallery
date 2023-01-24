@@ -160,6 +160,16 @@ public final class RootViewController: UIViewController
 
     private func onStateBeforeOnboarding()
     {
+        /// AnyView とは
+        /// https://developer.apple.com/documentation/swiftui/anyview
+        /// https://www.swiftbysundell.com/articles/avoiding-anyview-in-swiftui/
+        /// https://qiita.com/noppefoxwolf/items/22a243b28d39b97c8ccb
+        /// https://www.paveway.info/entry/2022/03/02/swiftui_anyview
+        /// どんなViewが来ても大丈夫なように型消去したViewがAnyViewである。
+        ///
+        /// RouteStoreとは
+        /// 画面遷移もする時に使う、Storeのサブクラスである。
+        /// https://actomaton.github.io/Actomaton/documentation/actomatonui/03-routestore
         let vc = HostingViewController(
             store: self.store,
             content: { store in

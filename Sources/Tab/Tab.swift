@@ -54,6 +54,7 @@ private func changeTabReducer<InnerAction, InnerState, Environment, TabID>()
     }
 }
 
+/// タブバーの配下のViewに何かをやらせる時のためのReducer(?)
 private func tabChildrenReducer<InnerAction, InnerState, Environment, TabID>(
     innerReducers: @escaping (TabID) -> Reducer<InnerAction, InnerState, Environment>
 ) -> Reducer<Action<InnerAction, InnerState, TabID>, State<InnerState, TabID>, Environment>
